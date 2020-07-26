@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <%- include('../layout')  %> 
+    <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">อัพโหลดภาพปก</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <form class="md-form">
+            <div class="file-field">
+              <div class="z-depth-1-half mb-4">
+                <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" class="img-fluid"
+                  alt="example placeholder">
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="btn btn-mdb-color btn-rounded float-left">
+                    <input type="file">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">สร้างนิยาย</h4>
+          <form class="needs-validation" novalidate>
+
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <label for="name">ชื่อเรื่อง</label>
+                <input type="text" class="form-control" id="name" placeholder="ใส่ชื่อเรื่อง" value="" required>
+                <div class="invalid-feedback">
+                  กรุณากรอกชื่อนิยาย
+                </div>
+              </div>
+
+              <div class="col-md-12 mb-3">
+                <label for="tagLine">คำโปรย</label>
+                <textarea class="form-control" name="" id="tagLine" cols="30" rows="5" placeholder="คำโปรยไม่น้อยกว่า 20 ตัวอักษร" required></textarea>
+                <div class="invalid-feedback">
+                  กรุณากรอกคำโปรย
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="category">หมวดหมู่</label>
+                <select class="custom-select d-block w-100" id="category" required>
+                  <option value="">เลือกหมวดหมู่...</option>
+                  <option>คอมเมดี้</option>
+                  <option>สยองขวัญ</option>
+                  <option>ไซไฟ</option>
+
+                </select>
+                <div class="invalid-feedback">
+                  กรุณาเลือกหมวดหมู่
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="rating">เรตติ้ง</label>
+                <select class="custom-select d-block w-100" id="rating" required>
+                  <option value="">เลือกหมวดหมู่...</option>
+                  <option>ทั่วไป</option>
+                  <option>18+</option>
+                  <option>20+</option>
+                </select>
+                <div class="invalid-feedback">
+                  กรุณาเลือกเรตติ้ง
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                <label for="details">เนื้อหา</label>
+                <textarea class="form-control" name="" id="details"  rows="10" placeholder="ใส่เนื้อหา" required></textarea>
+                <div class="invalid-feedback">
+                  กรุณากรอกเนื้อหา
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">บันทึก</button>
+          </form>
+        </div>
+      </div>
+
+
+
+
+</body>
+</html>
